@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Photo Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <input type="file" id="fileInput" accept="image/*">
+            <button id="grayscale">Grayscale</button>
+            <button id="brightness">Brightness</button>
+            <button id="contrast">Contrast</button>
+            <button id="blur">Blur</button>
+            <button id="draw">Draw</button>
+            <input type="color" id="colorPicker">
+            <input type="range" id="slider" min="0" max="200" value="100">
+        </div>
+        <canvas id="photoCanvas"></canvas>
+    </div>
+
+    <script src="file-canvas.js"></script>
+    <script src="filters.js"></script>
+    <script src="effects.js"></script>
+    <script src="drawing.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>

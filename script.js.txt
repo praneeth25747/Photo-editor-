@@ -1,0 +1,3 @@
+function orderCoffee(coffeeType) {
+    alert(`You have ordered ${coffeeType}. Thank you!`);
+}
